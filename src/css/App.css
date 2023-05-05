@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
+@import url('Home.module.css');
+
 :root {
   --fonte-principal: "Poppins";
   --texto-branco: #fff;
@@ -12,4 +14,6 @@
 .App {
   text-align: center;
   font-family: var(--fonte-principal);
+  font-size: 16px;
+  font-weight: 400;
 }

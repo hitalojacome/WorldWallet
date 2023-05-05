@@ -2,10 +2,13 @@
 import './css/App.css'
 import './css/reset.css'
 
+/* import components */
+import Home from './Components/Home';
+
 function App() {
   return (
     <div className="App">
-      <p>Lulala</p>
+      <Home />
     </div>
   );
 }

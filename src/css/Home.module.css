@@ -1,0 +1,89 @@
+.Home {
+    background-image: url('../assets/BackgroundHome.png');
+    background-size: cover;
+    height: 100vh;
+    color: var(--texto-branco);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 10vh;
+}
+
+.logo {
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    padding: 0 3em;
+}
+
+.logo__texto {
+    margin-left: .5em;
+}
+
+.logo__texto__destaque {
+    font-weight: 700;
+}
+
+.headerR {
+    display: flex;
+    align-items: center;
+    padding: 0 3em;
+}
+
+.button {
+    padding: 0 4em;
+}
+
+.button__login {
+    color: var(--texto-branco);
+    background-color: transparent;
+    border-radius: 200px;
+    font-weight: 600;
+    border: 4px solid var(--cor-botao);
+    padding: 10px 40px;
+    box-sizing: border-box;
+    margin-right: 2em;
+    cursor: pointer;
+}
+
+.button__NewAccount {
+    color: var(--texto-branco);
+    background-color: var(--cor-botao);
+    border-radius: 200px;
+    font-weight: 600;
+    padding: 10px 25px;
+    border: 4px solid var(--cor-botao); 
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.center {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.center__left {
+    text-align: left;
+    width: 40em;
+}
+
+.center__left__titulo {
+    font-weight: 600;
+    font-size: 50px;
+}
+
+.titulo__destaque {
+    color: var(--roxo-degrade);
+}
+
+.center__left__cards {
+    width: 40em;
+}
+
+.partners {
+    align-items: center;
+}
