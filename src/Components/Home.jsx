@@ -1,6 +1,6 @@
 import styles from '../css/Home.module.css'
+import {Link} from 'react-router-dom'
 import Logo from '../assets/logo_header.png'
-import Hamburger from '../assets/menu_hamburger.svg'
 import Cards from '../assets/cards.png'
 import LogoQuartz from '../assets/Quartzlogo.png'
 import LogoBloomberg from '../assets/Bloomberglogo.png'
@@ -17,10 +17,19 @@ function Home() {
                 </div>
                 <div className={styles.headerR}>
                     <div className={styles.button}>
-                        <button className={styles.button__login}>ENTRAR</button>
+                        <Link to='/'style={{ textDecoration: 'none'}} className={styles.button__login}>ENTRAR</Link>
                         <button className={styles.button__NewAccount}>CADASTRE-SE</button>
                     </div>
-                    <img src={Hamburger} alt='Menu Hamburger' />
+                    <input type='checkbox' id="menu" className={styles.container__botao} />
+                    <label for="menu">
+                        <span className={styles.menu__hamburger}></span>
+                    </label>
+                    <ul className={styles.lista__menu}>
+                        <li className={styles.lista__menu__item}><Link to='/'style={{ textDecoration: 'none'}}>Home</Link></li>
+                        <li className={styles.lista__menu__item}><Link to='/About'style={{ textDecoration: 'none'}}>Sobre</Link></li>
+                        <li className={styles.lista__menu__item}><Link to='/Serviços'style={{ textDecoration: 'none'}}>Serviços</Link></li>
+                        <li className={styles.lista__menu__item}><Link to='/Contact'style={{ textDecoration: 'none'}}>Contatos</Link></li>
+                    </ul>
                 </div>
             </header>
             <div className={styles.center}>
