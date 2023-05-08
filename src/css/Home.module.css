@@ -42,41 +42,60 @@
     background-color: transparent;
     border-radius: 200px;
     font-weight: 600;
-    border: 4px solid var(--cor-botao);
+    border: 4px solid var(--lilas);
     padding: 10px 40px;
     box-sizing: border-box;
     margin-right: 2em;
     cursor: pointer;
 }
 
+.button__login:hover {
+    background-color: var(--lilas);
+    transition: .3s;
+}
+
+.button__NewAccount:hover {
+    background-color: transparent;
+    transition: .3s;
+}
+
 .button__NewAccount {
     color: var(--texto-branco);
-    background-color: var(--cor-botao);
+    background-color: var(--lilas);
     border-radius: 200px;
     font-weight: 600;
     padding: 10px 25px;
-    border: 4px solid var(--cor-botao); 
+    border: 4px solid var(--lilas); 
     box-sizing: border-box;
     cursor: pointer;
 }
 
-.menu__hamburger {
-    width: 2.5em;
-    height: 1.1em;
-    background-image: url('../assets/menu_hamburger.svg');
-    background-repeat: no-repeat;
-    background-position: center;
+.container__botao {
+    display: none;
+}
+
+.label_menu {
+    cursor:pointer;
 }
 
 .lista__menu {
+    padding: 1em;
     text-align: center;
     gap: 10%;
-    background-color: aqua;
+    border: 1px solid var(--lilas);
+    background-color: var(--azul-escuro);
     position: absolute;
     display: none;
     top: 10%;
-    left: 92%;
-    width: 8vw;
+    left: 84.3%;
+    width: 13vw;
+    border-radius: 20px 0px 0px 20px;
+}
+
+.lista__menu__itemA, .lista__menu__itemB, .lista__menu__itemC, .lista__menu__itemD {
+    font-size: 25px ;
+    font-weight: 600;
+    padding: 1em;
 }
 
 .container__botao:checked~.lista__menu {
@@ -100,7 +119,7 @@
 }
 
 .titulo__destaque {
-    color: var(--cor-botao);
+    color: var(--lilas);
 }
 
 .center__left__texto {
@@ -109,13 +128,18 @@
 
 .button__OpenAccount {
     color: var(--texto-branco);
-    background-color: var(--cor-botao);
+    background-color: var(--lilas);
     border-radius: 6px;
     font-weight: 600;
     padding: 15px 25px;
-    border: 4px solid var(--cor-botao); 
+    border: 4px solid var(--lilas); 
     box-sizing: border-box;
     cursor: pointer;
+}
+
+.button__OpenAccount:hover {
+    background-color: transparent;
+    transition: .3s;
 }
 
 .center__left__cards {

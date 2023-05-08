@@ -1,0 +1,52 @@
+.about {
+    height: 100vh;
+    margin: auto;
+    padding: 6em 5em 0em 5em;
+    box-sizing: border-box;
+}
+
+.about__text {
+    text-align: left;
+    width: 73%;
+}
+
+.about__text__title {
+    font-weight: 600;
+    font-size: 45px;
+    color: var(--lilas);
+}
+
+.about__text__paragraph {
+    font-weight: 600;
+    padding: 2em 0;
+    font-size: 20px;
+}
+
+.about__cards {
+    display: flex;
+    margin: auto;
+    gap: 30px;
+    height: 45%;
+}
+
+.cards__item {
+    background: var(--azul-escuro);
+    border-radius: 30px;
+    width: 40%;
+    box-shadow: 10px 10px 8px rgba(56.86%, 18.82%, 95.69%, 0.9);;
+}
+
+.cards__item__title {
+    text-align: center;
+    padding: .5em 0;
+    font-weight: 500;
+    color: var(--lilas);
+    font-size: 30px;
+}
+
+.cards__item__text {
+    text-align: justify;
+    font-size: 20px;
+    padding: .4em;
+    color: var(--texto-branco);
+}

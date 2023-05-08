@@ -5,7 +5,8 @@ import{BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 
 
 /* import components */
-import Home from './Components/Home';
+import Home from './Components/Home'
+import About from './Components/About'
 
 function App() {
   return (
@@ -13,7 +14,9 @@ function App() {
       <Router>
         <Routes>
           <Route path='/' element={<Home/>} />
+          <Route path='/About' element={<About/>} />
         </Routes>
+        <About/>
       </Router>
     </div>
   );

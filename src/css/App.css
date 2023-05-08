@@ -1,14 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
 @import url('Home.module.css');
+@import url('About.module.css');
 
 :root {
   --fonte-principal: "Poppins";
   --texto-branco: #fff;
   --texto-preto: #000;
+  --lilas: #9130F4;
+  --azul-escuro: #121139;
   --roxo-degrade: linear-gradient(263.24deg, #9130F4 21.05%, #4646F9 77.63%);
-  --cor-botao: #9130F4;
-  --background-footer: #121139;
 }
 
 .App {
