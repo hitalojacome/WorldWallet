@@ -7,6 +7,7 @@ import{BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 /* import components */
 import Home from './Components/Home'
 import About from './Components/About'
+import Data from './Components/Data';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path='/About' element={<About/>} />
         </Routes>
         <About/>
+        <Data/>
       </Router>
     </div>
   );

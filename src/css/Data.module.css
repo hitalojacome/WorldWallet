@@ -1,0 +1,36 @@
+.Data {
+    background-image: url('../assets/BackgroundData.png');
+    background-size: cover;
+    height: 100vh;
+    color: var(--texto-branco);
+}
+
+.Data__description {
+    padding: 2em 0em 0em 0em;
+    width: 45%;
+    margin: auto;
+}
+
+.Data__description__title {
+    color: var(--lilas);
+    font-weight: 600;
+    font-size: 40px;
+}
+
+.Data__description__text {
+    margin: auto;
+    padding: 2em 0 1em 0;
+    font-weight: 500;
+    width: 57%;
+}
+
+.Data__dashboard {
+    width: 48%;
+    border: 1px solid var(--lilas);
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.Data__dashboard:hover {
+    width: 50%;
+}
