@@ -8,6 +8,7 @@ import{BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import Home from './Components/Home'
 import About from './Components/About'
 import Data from './Components/Data';
+import Team from './Components/Team';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         </Routes>
         <About/>
         <Data/>
+        <Team />
       </Router>
     </div>
   );

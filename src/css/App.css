@@ -3,6 +3,7 @@
 @import url('Home.module.css');
 @import url('About.module.css');
 @import url('Data.module.css');
+@import url('Team.module.css');
 
 :root {
   --fonte-principal: "Poppins";

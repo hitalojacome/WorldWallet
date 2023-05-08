@@ -1,0 +1,43 @@
+.team {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.team__description {
+    text-align: left;
+    padding: 0 0 0 6em;
+    width: 36%;
+}
+
+.team__description__title {
+    color: var(--lilas);
+    font-weight: 600;
+    font-size: 45px;
+}
+
+.team__description__text {
+    font-weight: 500;
+    padding: 2em 0 1em 0;
+}
+
+.team__description__more {
+    border-top: 3px solid var(--lilas);
+    padding: 1em;
+    color: var(--lilas);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.team__description__more:hover {
+    margin-bottom: 2px solid var(--lilas);
+    background-color: var(--lilas);
+    color: var(--texto-branco);
+    transition: .6s;
+}
+
+.img {
+    width: 40%;
+    padding: 0 4em 0 0;
+}
