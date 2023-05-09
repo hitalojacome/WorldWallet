@@ -9,6 +9,8 @@ import Home from './Components/Home'
 import About from './Components/About'
 import Data from './Components/Data';
 import Team from './Components/Team';
+import Mac from './Components/Mac';
+import Footer from '.Components/Footer';
 
 function App() {
   return (
@@ -21,6 +23,8 @@ function App() {
         <About/>
         <Data/>
         <Team />
+        <Mac />
+        <Footer />
       </Router>
     </div>
   );

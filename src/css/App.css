@@ -4,6 +4,7 @@
 @import url('About.module.css');
 @import url('Data.module.css');
 @import url('Team.module.css');
+@import url('Mac.module.css');
 
 :root {
   --fonte-principal: "Poppins";

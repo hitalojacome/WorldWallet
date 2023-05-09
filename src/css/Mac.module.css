@@ -1,0 +1,23 @@
+.Mac {
+    background-image: url('../assets/BackgroundMac.png');
+    background-size: cover;
+    height: 100vh;
+    color: var(--texto-branco);
+}
+
+.Mac__description {
+    margin: auto;
+    width: 50%;
+    padding: 1em 0;
+}
+
+.Mac__description__title {
+    color: var(--lilas);
+    font-weight: 700;
+    font-size: 35px;
+}
+
+.img {
+    width: 70%;
+    padding: 4em 0 0 0;
+}
