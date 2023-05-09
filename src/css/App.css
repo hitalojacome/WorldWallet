@@ -5,11 +5,14 @@
 @import url('Data.module.css');
 @import url('Team.module.css');
 @import url('Mac.module.css');
+@import url('Footer.module.css');
 
 :root {
   --fonte-principal: "Poppins";
   --texto-branco: #fff;
   --texto-preto: #000;
+  --texto-cinza: #92989F;
+  --texto-azul: #3A49F9;
   --lilas: #9130F4;
   --azul-escuro: #121139;
   --roxo-degrade: linear-gradient(263.24deg, #9130F4 21.05%, #4646F9 77.63%);
