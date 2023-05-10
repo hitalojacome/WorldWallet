@@ -30,6 +30,7 @@
 }
 
 .cards__item {
+    padding: 15px;
     background: var(--azul-escuro);
     border-radius: 30px;
     width: 40%;
