@@ -1,0 +1,100 @@
+.NewAccount {
+    font-family: var(--fonte-principal);
+    height: 100vh;
+    background-color: var(--azul-escuro);
+    color: var(--texto-branco);
+    padding: 1em;
+}
+
+.New {
+    border-radius: 30px;
+    background-color: var(--lilas);
+    width: 60%;
+    height: 94%;
+    margin: auto;
+    padding: 1em 1em;
+    box-sizing: border-box;
+    justify-content: space-between;
+}
+
+.New__name {
+    margin: auto;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.input_name, .input_LastName {
+    font-family: var(--fonte-principal);
+    padding: 1em 3em;
+    border-radius: 30px;
+    width: 80%;
+    border: 1px solid transparent;
+    margin-bottom: 2%;
+    text-align: left;
+}
+
+.New__title {
+    font-size: 35px;
+    font-weight: 700;
+    color: var(--azul-escuro);
+}
+
+.New__text {
+    font-weight: 600;
+    padding: 1em;
+    font-size: 20px;
+}
+
+.button_span {
+    color: var(--azul-escuro);
+    cursor: pointer;
+    margin: auto;
+}
+
+.input_NewEmail, .input_NewCpf, .input_NewDate, .input_NewPass {
+    font-family: var(--fonte-principal);
+    padding: 1em;
+    border-radius: 30px;
+    width: 45%;
+    border: 1px solid transparent;
+    margin-bottom: 2%;
+}
+
+.input_name, .input_LastName {
+    width: 20%;
+    gap: 30px;
+}
+
+.New_Term {
+    font-weight: 600;
+    padding: 1em 0 2em 0 ;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.New_Term span {
+    color: var(--azul-escuro);
+    cursor: pointer;
+}
+
+.button_New {
+    text-decoration: none;
+    background-color: transparent;
+    border-radius: 30px;
+    border: 2px solid #fff;
+    padding: .8em 4em;
+    color: var(--texto-branco);
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+
+}
+
+.button_New:hover {
+    color: var(--lilas);
+    background-color: var(--texto-branco);
+    transition: .3s;
+    border: 2px solid var(--roxo-escuro);
+} 

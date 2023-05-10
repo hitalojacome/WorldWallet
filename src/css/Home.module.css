@@ -92,7 +92,8 @@
     border-radius: 20px 0px 0px 20px;
 }
 
-.lista__menu__itemA, .lista__menu__itemB, .lista__menu__itemC, .lista__menu__itemD {
+.lista__menu li {
+    color: var(--lilas);
     font-size: 25px ;
     font-weight: 600;
     padding: 1em;

@@ -37,6 +37,11 @@ footer {
 
 .info__item {
     padding: 1em 0;
+    cursor: pointer;
+}
+
+.info__item:hover {
+    font-size: 17px;
 }
 
 .footer__down {

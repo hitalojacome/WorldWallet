@@ -11,6 +11,8 @@ import Data from './Components/Data';
 import Team from './Components/Team';
 import Mac from './Components/Mac';
 import Footer from './Components/Footer';
+import Login from './Components/Login';
+import NewAccount from './Components/NewAccount';
 
 function App() {
   return (
@@ -18,10 +20,11 @@ function App() {
       <Router>
         <Routes>
           <Route path='/' element={<Home/>} />
-          <Route path='/About' element={<About/>} />
+          <Route path='/Login' element={<Login />} />
+          <Route path='/NewAccount' element={<NewAccount />} />
         </Routes>
-        <About/>
-        <Data/>
+        <About />
+        <Data />
         <Team />
         <Mac />
         <Footer />
@@ -29,5 +32,6 @@ function App() {
     </div>
   );
 }
+
 
 export default App;

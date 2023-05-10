@@ -15,7 +15,7 @@ function Home() {
 
             <header className={styles.header}>
                 <div className={styles.logo}>
-                    <img src={Logo} alt='Logo da WorldWallet'/>
+                    <Link to='/'><img src={Logo} alt='Logo da WorldWallet'/></Link>
                     <p className={styles.logo__texto}>World<span className={styles.logo__texto__destaque}>Wallet</span></p>
                 </div>
                 <div className={styles.headerR}>
@@ -30,13 +30,13 @@ function Home() {
                     <ul className={styles.lista__menu}>
                         <img src={LogoHamburger} alt='Logo WorldWallet' />
                         <hr />
-                        <li className={styles.lista__menu__itemA}><Link to='/'style={{ textDecoration: 'none'}}>Home</Link></li>
+                        <li className={styles.lista__menu__item}><Link to='/'style={{ textDecoration: 'none'}}>Home</Link></li>
                         <hr />
-                        <li className={styles.lista__menu__itemB}><Link to='/About'style={{ textDecoration: 'none'}}>Sobre</Link></li>
+                        <li className={styles.lista__menu__item}><Link to='/'style={{ textDecoration: 'none'}}>Sobre</Link></li>
                         <hr />
-                        <li className={styles.lista__menu__itemC}><Link to='/Serviços'style={{ textDecoration: 'none'}}>Serviços</Link></li>
+                        <li className={styles.lista__menu__item}><Link to='/'style={{ textDecoration: 'none'}}>Serviços</Link></li>
                         <hr />
-                        <li className={styles.lista__menu__itemD}><Link to='/Contact'style={{ textDecoration: 'none'}}>Contatos</Link></li>
+                        <li className={styles.lista__menu__item}><Link to='/'style={{ textDecoration: 'none'}}>Contatos</Link></li>
                     </ul>
                 </div>
             </header>

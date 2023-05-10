@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
 @import url('Home.module.css');
 @import url('About.module.css');
@@ -6,6 +6,8 @@
 @import url('Team.module.css');
 @import url('Mac.module.css');
 @import url('Footer.module.css');
+@import url('Login.module.css');
+@import url('NewAccount.module.css');
 
 :root {
   --fonte-principal: "Poppins";
@@ -13,7 +15,9 @@
   --texto-preto: #000;
   --texto-cinza: #92989F;
   --texto-azul: #3A49F9;
+  --facebook: #3C589E;
   --lilas: #9130F4;
+  --roxo-escuro: #7122C0;
   --azul-escuro: #121139;
   --roxo-degrade: linear-gradient(263.24deg, #9130F4 21.05%, #4646F9 77.63%);
 }

@@ -1,0 +1,123 @@
+.Account {
+    font-family: var(--fonte-principal);
+    height: 100vh;
+    background-color: var(--azul-escuro);
+    color: var(--texto-branco);
+    padding: 1em;
+}
+
+.Login {
+    border-radius: 30px;
+    background-color: var(--lilas);
+    width: 35%;
+    margin: auto;
+    padding: 1em 1em;
+    box-sizing: border-box;
+    justify-content: space-between;
+}
+
+.Login__Icon {
+    width: 30%;
+}
+
+.Login__title {
+    font-size: 35px;
+    font-weight: 700;
+    color: var(--azul-escuro);
+}
+
+.Login__text {
+    font-weight: 600;
+    padding: 1em;
+    font-size: 20px;
+}
+
+.button_span {
+    color: var(--azul-escuro);
+    cursor: pointer;
+}
+
+.input_email, .input_pass {
+    font-family: var(--fonte-principal);
+    padding: .9em;
+    border-radius: 30px;
+    width: 63%;
+    border: 1px solid transparent;
+}
+
+.input_email {
+    margin-bottom: 4%;
+}
+
+.forgot {
+    font-weight: 500;
+    color: var(--azul-escuro);
+    padding: 1em 0 1.5em 0 ;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.button_login {
+    text-decoration: none;
+    background-color: transparent;
+    border-radius: 30px;
+    border: 2px solid #fff;
+    padding: .6em 7.5em;
+    color: var(--texto-branco);
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.button_login:hover {
+    color: var(--lilas);
+    background-color: var(--texto-branco);
+    transition: .3s;
+    border: 2px solid var(--roxo-escuro);
+}
+
+.ou {
+    padding: 1.5em 0 .5em 0;
+    margin: auto;
+    font-weight: 600;
+    font-size: 18px;
+    width: 80%;
+}
+
+.button_social {
+    align-items: left;
+    display: block;
+}
+
+.button_google {
+    margin-top: .5em;
+    margin-bottom: 1em;
+}
+
+.button_google, .button_facebook {
+    font-family: var(--fonte-principal);
+    padding: .7em;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 20px;
+    width: 63%;
+    border: none;
+    cursor: pointer;
+    box-shadow: 3px 8px .10px;
+    align-items: center;
+}
+
+.button_facebook {
+    background-color: var(--facebook);
+}
+
+.button_google_icon{
+    width: 12%;
+    padding: 0 .8em 0 0;
+}
+
+.button_facebook_icon {
+    width: 14%;
+    margin-right: 5.5%;
+}
+
