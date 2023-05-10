@@ -1,9 +1,15 @@
 import styles from '../css/NewAccount.module.css'
 import { Link } from 'react-router-dom' 
+import { TiArrowBackOutline as Back } from 'react-icons/ti'
 
 function NewAccount() {
     return(
         <section className={styles.NewAccount}>
+                <Link to='/'>
+                    <div className={styles.AccountBack}>
+                        <Back />
+                    </div>
+                </Link>
             <div className={styles.New}>
                 <h1 className={styles.New__title}>Cadastro</h1>
                 <h3 className={styles.New__text}>Já tem uma conta? <Link to='/Login' className={styles.button_span}>Faça Login</Link></h3>
@@ -22,7 +28,7 @@ function NewAccount() {
                     <br />
                     <input type="password" className={styles.input_NewPass} placeholder='Confirme sua Senha:' />
                     <p className={styles.New_Term}>Eu concordo com os <span>Termos de Serviço</span> e <span>Política de Privacidade</span></p>
-                    <Link to='/' className={styles.button_New}>Cadastre-se</Link>
+                    <Link to='/Login' className={styles.button_New}>Cadastre-se</Link>
                 </div>
             </div>
         </section>

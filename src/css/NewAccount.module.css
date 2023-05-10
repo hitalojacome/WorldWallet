@@ -6,6 +6,21 @@
     padding: 1em;
 }
 
+.AccountBack {
+    align-items: left;
+    position: absolute;
+    font-size: 40px;
+    margin-left: 5%;
+    color: var(--lilas);
+    cursor: pointer;
+}
+
+.AccountBack:hover {
+    font-size: 50px;
+    transition: .3s;
+    color: var(--texto-branco);
+}
+
 .New {
     border-radius: 30px;
     background-color: var(--lilas);

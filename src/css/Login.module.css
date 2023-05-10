@@ -6,6 +6,21 @@
     padding: 1em;
 }
 
+.AccountBack {
+    align-items: left;
+    position: absolute;
+    font-size: 40px;
+    margin-left: 5%;
+    color: var(--lilas);
+    cursor: pointer;
+}
+
+.AccountBack:hover {
+    font-size: 50px;
+    transition: .3s;
+    color: var(--texto-branco);
+}
+
 .Login {
     border-radius: 30px;
     background-color: var(--lilas);
@@ -89,11 +104,6 @@
     display: block;
 }
 
-.button_google {
-    margin-top: .5em;
-    margin-bottom: 1em;
-}
-
 .button_google, .button_facebook {
     font-family: var(--fonte-principal);
     padding: .7em;
@@ -107,8 +117,25 @@
     align-items: center;
 }
 
+.button_google {
+    margin-top: .5em;
+    margin-bottom: 1em;
+}
+
+.button_google:hover {
+    background-color: var(--roxo-escuro);
+    width: 70%;
+    transition: .3s;
+}
+
 .button_facebook {
     background-color: var(--facebook);
+}
+
+.button_facebook:hover {
+    background-color: var(--texto-branco);
+    width: 70%;
+    transition: .3s;
 }
 
 .button_google_icon{
