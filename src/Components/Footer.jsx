@@ -18,9 +18,15 @@ function Footer() {
                 </ul>
                 <ul className={styles.info__legal}>
                     <li className={styles.info__item__titulo}>Legal</li>
-                    <li className={styles.info__item}>Reclamações</li>
-                    <li className={styles.info__item}>Privacidade</li>
-                    <li className={styles.info__item}>Termos</li>
+                    <a href='https://www.reclameaqui.com.br/' target='_blank' rel="noreferrer">
+                        <li className={styles.info__item}>Reclamações</li>
+                    </a>
+                    <a href='https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm' target='_blank' rel="noreferrer">
+                        <li className={styles.info__item}>Privacidade</li>
+                    </a>
+                    <a href='https://policies.google.com/privacy?hl=pt-BR' target='_blank' rel="noreferrer">
+                        <li className={styles.info__item}>Termos</li>
+                    </a>
                 </ul>
                 <ul className={styles.info__contact}>
                     <li className={styles.info__item__titulo}>Atendimento 24h</li>
@@ -31,7 +37,7 @@ function Footer() {
                     <li className={styles.info__item}>Atendimento no exterior: +55 31 3078-8152</li>
                 </ul>
             </div>
-            <div className={styles.footer__down}>Design with love © Hitalo Jacome 2023. All right reserved</div>
+            <div className={styles.footer__down}>Design with love © <a href='https://www.linkedin.com/in/hitalojacome/' target='_blank' rel="noreferrer">Hitalo Jacome</a> 2023. All right reserved</div>
         </footer>
     )
 }

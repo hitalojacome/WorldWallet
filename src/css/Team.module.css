@@ -5,6 +5,10 @@
     justify-content: space-between;
 }
 
+.team a {
+    text-decoration: none;
+}
+
 .team__description {
     text-align: left;
     padding: 0 0 0 6em;

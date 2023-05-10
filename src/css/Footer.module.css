@@ -1,4 +1,5 @@
 footer {
+    border-top: 3px solid var(--roxo-escuro);
     background-image: url('../assets/BackgroundFooter.png');
     height: 80vh;
     background-size: cover;
@@ -31,6 +32,11 @@ footer {
     padding: 1em;
 }
 
+.info a {
+    text-decoration: none;
+    color: var(--texto-branco);
+}
+
 .info__item__titulo {
     color: var(--texto-cinza);
 }
@@ -41,7 +47,7 @@ footer {
 }
 
 .info__item:hover {
-    font-size: 17px;
+    border-bottom: 1px solid var(--texto-azul);
 }
 
 .footer__down {
@@ -51,4 +57,13 @@ footer {
     color: var(--texto-cinza);
     width: 80%;
     margin: auto;
+}
+
+.footer__down a {
+    color: var(--texto-cinza);
+}
+
+.footer__down a:hover {
+    color: var(--lilas);
+    transition: .5s;
 }

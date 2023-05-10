@@ -23,6 +23,7 @@
 }
 
 .about__cards {
+    cursor: pointer;
     display: flex;
     margin: auto;
     gap: 30px;
