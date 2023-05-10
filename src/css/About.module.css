@@ -33,7 +33,12 @@
     background: var(--azul-escuro);
     border-radius: 30px;
     width: 40%;
-    box-shadow: 10px 10px 8px rgba(56.86%, 18.82%, 95.69%, 0.9);;
+    box-shadow: 10px 10px 8px rgba(56.86%, 18.82%, 95.69%, 0.9);
+}
+
+.cards__item:hover {
+    transition: .5s;
+    box-shadow: -1px -20px 3px rgba(56.86%, 18.82%, 95.69%, 0.9);
 }
 
 .cards__item__title {
