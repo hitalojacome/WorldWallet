@@ -11,5 +11,7 @@
 <h4>O projeto é desenvolvido pelo aluno a partir da criação do protótipo do site com a ferramenta Figma</h4>
 <br>
 <h2>Tecnologias que utilizei:</h2>
-<img align="center" alt="JavaScript" height="40" width="50" title="JavaScript" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg">
-<img align="center" alt="JavaScript" height="40" width="50" title="ReactJS" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />
+<div display="flex">
+  <img align="center" alt="JavaScript" height="40" width="50" title="JavaScript" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg">
+  <img align="center" alt="JavaScript" height="40" width="50" title="ReactJS" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />
+</div>
