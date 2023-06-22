@@ -20,7 +20,7 @@ function Login(){
         axios  
             .post('http://localhost:8080/usuarios/login', userData)
             .then(response => {
-                if (response.data.sucess) {
+                if (response.data.success) {
                     alert("Login realizado com sucesso!");
                 } else {
                     alert('Email e senha não correspondem. Verifique suas credenciais.');
