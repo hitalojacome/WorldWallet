@@ -1,21 +1,24 @@
 import styles from '../css/NewAccount.module.css'
 
 import axios from "axios";
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 import { Link, Navigate } from 'react-router-dom' 
 import { TiArrowBackOutline as Back } from 'react-icons/ti'
 
 function NewAccount() {
-    axios.get('http://localhost:8080/usuarios')
+    useEffect(() => {
+        axios
+        .get('http://localhost:8080/usuarios')
         .then(response => {
-    // Manipule a resposta da API aqui
-        console.log(response.data);
-    })
-    .catch(error => {
-    // Trate os erros da requisição aqui
-        console.error(error);
-    });
+            // Manipule a resposta da API aqui
+                console.log(response.data);
+            })
+            .catch(error => {
+            // Trate os erros da requisição aqui
+                console.error(error);
+            });
+    }, []); // O array de dependências vazio [] garante que a chamada seja feita apenas uma vez no carregamento do componente
 
     const [nome, setNome] = useState("");
     const [sobrenome, setSobreNome] = useState("");
