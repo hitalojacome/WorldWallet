@@ -1,9 +1,7 @@
 import styles from '../css/NewAccount.module.css'
-
-import axios from "axios";
+import axios from "axios"; // bib de requisições HTTP.
 import React, { useState, useEffect } from 'react';
-
-import { Link, Navigate } from 'react-router-dom' 
+import { Link, useNavigate } from 'react-router-dom' 
 import { TiArrowBackOutline as Back } from 'react-icons/ti'
 
 function NewAccount() {
@@ -26,8 +24,16 @@ function NewAccount() {
     const [cpf, setCpf] = useState("");
     const [nascimento, setNascimento] = useState("");
     const [senha, setSenha] = useState("");
+    const [confirmarSenha, setConfirmarSenha] = useState("");
+
+    const navigate = useNavigate();
 
     const sendData = () => {
+        if (senha !== confirmarSenha) {
+            alert("A senha e a confirmação de senha não correspondem.")
+            return; 
+        }
+
         const newUser = {
           nome: nome,
           sobrenome: sobrenome,
@@ -36,21 +42,24 @@ function NewAccount() {
           nascimento: nascimento,
           senha: senha
         };
-    
-        axios.post('http://localhost:8080/usuarios', newUser)
-          .then(response => {
-            setCpf("");
-            setNome("");
-            setSobreNome("");
-            setEmail("");
-            setNascimento("");
-            setSenha("");
-            <Navigate to = '/Login' />;
-          })
-          .catch(error => {
-            console.error(error);
-            // Trate os erros da requisição aqui, se necessário
-          });
+        
+        axios
+            .post('http://localhost:8080/usuarios', newUser)
+            .then(response => {
+                setCpf("");
+                setNome("");
+                setSobreNome("");
+                setEmail("");
+                setNascimento("");
+                setSenha("");
+                setConfirmarSenha("");
+
+                alert("Conta criada com sucesso!");
+                navigate('/Login'); // Redirecionar para a página de login
+            })
+            .catch(error => {
+                console.error(error);
+            });
       };
 
     return(
@@ -76,7 +85,7 @@ function NewAccount() {
                     <br />
                     <input type='password' className={styles.input_NewPass} value={senha} onChange={(texto)=>setSenha(texto.target.value)} placeholder='Digite sua Senha:' />
                     <br />
-                    <input type="password" className={styles.input_NewPass} placeholder='Confirme sua Senha:' />
+                    <input type="password" className={styles.input_NewPass} value={confirmarSenha} onChange={texto => setConfirmarSenha(texto.target.value)} placeholder='Confirme sua Senha:' />
                     <p className={styles.New_Term}>Eu concordo com os <span>Termos de Serviço</span> e <span>Política de Privacidade</span></p>
                     <button className={styles.button_New} onClick={sendData}>Cadastre-se</button>
                 </div>
