@@ -74,20 +74,68 @@ function NewAccount() {
                 <h3 className={styles.New__text}>Já tem uma conta? <Link to='/Login' className={styles.button_span}>Faça Login</Link></h3>
                 <div className={styles.Forms}>
                     <div className={styles.New__name}>
-                        <input type='text' className={styles.input_name} value={nome} onChange={(texto)=>setNome(texto.target.value)} placeholder='Nome:' />
-                        <input type='text' className={styles.input_LastName} value={sobrenome} onChange={(texto)=>setSobreNome(texto.target.value)} placeholder='Sobrenome:' />
+                        <input 
+                        className={styles.input_name}
+                        type='text' 
+                        value={nome} 
+                        onChange={(texto)=>setNome(texto.target.value)} 
+                        placeholder='Nome:' 
+                        />
+                        <input 
+                        className={styles.input_LastName}
+                        type='text'
+                        value={sobrenome} 
+                        onChange={(texto)=>setSobreNome(texto.target.value)} 
+                        placeholder='Sobrenome:' 
+                        />
                     </div>
-                    <input type='email' className={styles.input_NewEmail} value={email} onChange={(texto)=>setEmail(texto.target.value)} placeholder='E-mail:' />
+                    <input
+                    className={styles.input_NewEmail} 
+                    type='email' 
+                    value={email} 
+                    onChange={(texto)=>setEmail(texto.target.value)} 
+                    placeholder='E-mail:' 
+                    />
                     <br />
-                    <input type='text' className={styles.input_NewCpf} value={cpf} onChange={(texto)=>setCpf(texto.target.value)} placeholder='CPF:' maxLength={11} />
+                    <input 
+                    className={styles.input_NewCpf} 
+                    type='text' 
+                    value={cpf} 
+                    onChange={(texto)=>setCpf(texto.target.value)} 
+                    placeholder='CPF:' 
+                    maxLength={11} 
+                    />
                     <br />
-                    <input type='date' className={styles.input_NewDate} value={nascimento} onChange={(texto)=>setNascimento(texto.target.value)} placeholder='Data de Nascimento:' />
+                    <input 
+                    className={styles.input_NewDate}
+                    type='date' 
+                    value={nascimento} 
+                    onChange={(texto)=>setNascimento(texto.target.value)} 
+                    placeholder='Data de Nascimento:' 
+                    />
                     <br />
-                    <input type='password' className={styles.input_NewPass} value={senha} onChange={(texto)=>setSenha(texto.target.value)} placeholder='Digite sua Senha:' />
+                    <input 
+                    className={styles.input_NewPass}
+                    type='password'
+                    value={senha} 
+                    onChange={(texto)=>setSenha(texto.target.value)} 
+                    placeholder='Digite sua Senha:' 
+                    />
                     <br />
-                    <input type="password" className={styles.input_NewPass} value={confirmarSenha} onChange={texto => setConfirmarSenha(texto.target.value)} placeholder='Confirme sua Senha:' />
+                    <input
+                    className={styles.input_NewPass} 
+                    type="password" 
+                    value={confirmarSenha} 
+                    onChange={texto => setConfirmarSenha(texto.target.value)} 
+                    placeholder='Confirme sua Senha:' 
+                    />
+
                     <p className={styles.New_Term}>Eu concordo com os <span>Termos de Serviço</span> e <span>Política de Privacidade</span></p>
-                    <button className={styles.button_New} onClick={sendData}>Cadastre-se</button>
+                    <button 
+                    className={styles.button_New} 
+                    onClick={sendData}>
+                        Cadastre-se
+                    </button>
                 </div>
             </div>
         </section>
