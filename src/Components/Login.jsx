@@ -43,9 +43,19 @@ function Login(){
                     <img src={LoginIcon} alt='Logo de login' className={styles.Login__Icon} />
                     <h1 className={styles.Login__title}>Login</h1>
                     <h3 className={styles.Login__text}>Não tem uma conta? <Link to='/NewAccount' className={styles.button_span}>Cadastre-se</Link></h3>
-                    <input type='email' className={styles.input_email} value={email} onChange={(e) => setEmail(e.target.value)} placeholder='E-mail' />
+                    <input 
+                        type='email' 
+                        className={styles.input_email} 
+                        value={email} 
+                        onChange={(e) => setEmail(e.target.value)} 
+                        placeholder='E-mail' />
                     <br />
-                    <input type='password' className={styles.input_pass} value={senha} onChange={(e) => setSenha(e.target.value)} placeholder='Senha' />
+                    <input 
+                        type='password' 
+                        className={styles.input_pass} 
+                        value={senha} 
+                        onChange={(e) => setSenha(e.target.value)} 
+                        placeholder='Senha' />
                     <p className={styles.forgot}>Esqueceu sua senha?</p>
                     <button className={styles.button_login} onClick={handleLogin}>
                         Entrar
