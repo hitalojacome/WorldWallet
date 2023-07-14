@@ -155,6 +155,7 @@
     gap: 30px;
     align-items: center;
     padding: 0 0 1em 0;
+    flex-wrap: wrap;
 }
 
 .partners__quartz,
@@ -200,5 +201,40 @@
     .partners {
         height: 12em;
         gap: 50px;
+    }
+}
+
+@media screen and (max-width: 428px) {
+    .logo__texto {
+        display: none;
+    }
+
+    .button {
+        display: none;
+    }
+
+    .lista__menu {
+        top: 7%;
+        left: 48%;
+        width: auto;
+    }
+
+    .center {
+        padding: 5em 1em;
+    }
+
+    .center__left__cards {
+        display: none;
+    }
+
+    .center__left {
+        padding: 0;
+        margin: auto;
+        text-align: center;
+    }
+
+    .partners {
+        margin: auto;
+        width: 50%;
     }
 }
