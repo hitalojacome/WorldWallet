@@ -13,11 +13,11 @@
     margin-left: 5%;
     color: var(--lilas);
     cursor: pointer;
+    transition: color .3s, font-size .3s;
 }
 
 .AccountBack:hover {
     font-size: 50px;
-    transition: .3s;
     color: var(--texto-branco);
 }
 
@@ -66,9 +66,18 @@
     color: var(--azul-escuro);
     cursor: pointer;
     margin: auto;
+    transition: color .3s, font-size .3s;
 }
 
-.input_NewEmail, .input_NewCpf, .input_NewDate, .input_NewPass {
+.button_span:hover {
+    color: var(--texto-branco);
+    font-size: 20.5px;
+}
+
+.input_NewEmail, 
+.input_NewCpf, 
+.input_NewDate, 
+.input_NewPass {
     font-family: var(--fonte-principal);
     padding: 1em;
     border-radius: 30px;
@@ -104,11 +113,33 @@
     font-weight: 600;
     font-size: 16px;
     cursor: pointer;
+    transition: background-color .3s, color .3s, border .3s;
 }
 
 .button_New:hover {
     color: var(--lilas);
     background-color: var(--texto-branco);
-    transition: .3s;
     border: 2px solid var(--roxo-escuro);
-} 
+}
+
+/* Responsivo */
+
+@media screen and (min-width: 1728px) {
+    .AccountBack {
+        font-size: 60px;
+    }
+
+    .AccountBack:hover {
+        font-size: 70px;
+    }
+
+    .New {
+        width: 50%;
+        height: 70%;
+        margin-top: 5%;
+    }
+
+    .button_New {
+        width: 46%;
+    }
+}

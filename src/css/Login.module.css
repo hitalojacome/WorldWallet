@@ -13,11 +13,11 @@
     margin-left: 5%;
     color: var(--lilas);
     cursor: pointer;
+    transition: color .3s, font-size .3s;
 }
 
 .AccountBack:hover {
     font-size: 50px;
-    transition: .3s;
     color: var(--texto-branco);
 }
 
@@ -50,6 +50,12 @@
 .button_span {
     color: var(--azul-escuro);
     cursor: pointer;
+    transition: color .3s, font-size .3s;
+}
+
+.button_span:hover {
+    color: var(--texto-branco);
+    font-size: 20.5px;
 }
 
 .input_email, .input_pass {
@@ -82,12 +88,12 @@
     font-weight: 600;
     font-size: 16px;
     cursor: pointer;
+    transition: background-color .3s, color .3s, border .3s;
 }
 
 .button_login:hover {
     color: var(--lilas);
     background-color: var(--texto-branco);
-    transition: .3s;
     border: 2px solid var(--roxo-escuro);
 }
 
@@ -114,7 +120,7 @@
     border: none;
     cursor: pointer;
     box-shadow: 3px 8px .10px;
-    align-items: center;
+    transition: background-color .3s, width .3s;
 }
 
 .button_google {
@@ -125,7 +131,6 @@
 .button_google:hover {
     background-color: var(--roxo-escuro);
     width: 70%;
-    transition: .3s;
 }
 
 .button_facebook {
@@ -135,7 +140,6 @@
 .button_facebook:hover {
     background-color: var(--texto-branco);
     width: 70%;
-    transition: .3s;
 }
 
 .button_google_icon{
@@ -148,3 +152,23 @@
     margin-right: 5.5%;
 }
 
+/* Responsivo */
+
+@media screen and (min-width: 1728px) {
+    .AccountBack {
+        font-size: 60px;
+    }
+
+    .AccountBack:hover {
+        font-size: 70px;
+    }
+
+    .Login {
+        width: 30%;
+        margin-top: 5%;
+    }
+
+    .button_login {
+        width: 66%;
+    }
+}

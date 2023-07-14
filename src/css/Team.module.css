@@ -32,6 +32,7 @@
     color: var(--lilas);
     font-weight: 600;
     cursor: pointer;
+    transition: background-color .6s;
 }
 
 .team__description__more:hover {

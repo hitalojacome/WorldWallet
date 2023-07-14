@@ -29,8 +29,21 @@
     border: 1px solid var(--lilas);
     border-radius: 30px;
     cursor: pointer;
+    transition: width .3s;
 }
 
 .Data__dashboard:hover {
     width: 50%;
+}
+
+/* Responsivo */
+
+@media screen and (min-width: 1728px) {
+    .Data__description {
+        padding: 5em 0em 0em 0em;
+    }
+
+    .Data__dashboard {
+        margin-top: 5rem;
+    }
 }
