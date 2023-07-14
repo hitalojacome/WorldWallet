@@ -156,3 +156,47 @@
     align-items: center;
     padding: 0 0 1em 0;
 }
+
+.partners__quartz,
+.partners__bloomberg,
+.partners__forbes,
+.partners__cnbc {
+  margin-bottom: 0;
+  transition: margin-bottom 0.3s;
+}
+
+.partners__quartz:hover,
+.partners__bloomberg:hover, 
+.partners__forbes:hover, 
+.partners__cnbc:hover {
+    margin-bottom: 1em;
+}
+
+@media screen and (min-width: 1728px) {
+    .lista__menu {
+        top: 9%;
+        left: 85.1%;
+    }
+
+    .center__left {
+        width: 40%;
+    }
+
+    .center__left__titulo {
+        font-size: 50px;
+    }
+
+    .center__left__texto {
+        font-size: 19px;
+    }
+
+    .center__left__cards  {
+        margin-left: 20em;
+        width: 50em;
+    }
+
+    .partners {
+        height: 12em;
+        gap: 50px;
+    }
+}
