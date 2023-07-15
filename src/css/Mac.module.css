@@ -33,3 +33,19 @@
         margin-top: 5rem;
     }
 }
+
+@media screen and (max-width: 428px) {
+    .Mac__description {
+        width: 90%;
+        padding: 3em 0em 0em 0em;
+    }
+
+    .Mac__description__title {
+        font-size: 33px;
+    }
+
+    .img {
+        padding: 10em 0;
+        width: 100%;
+    }
+}

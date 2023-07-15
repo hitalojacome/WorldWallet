@@ -46,3 +46,23 @@
     width: 40%;
     padding: 0 4em 0 0;
 }
+
+/* Responsivo */
+
+@media screen and (max-width: 428px) {
+    .team {
+        display: block;
+    }
+
+    .team__description {
+        margin: auto;
+        text-align: center;
+        padding: 4em 0em 0em 0em;
+        width: 90%;
+    }
+
+    .img {
+        padding: 4em 0em 0em 0em;
+        width: 100%;
+    }
+}

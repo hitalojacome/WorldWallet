@@ -143,3 +143,25 @@
         width: 46%;
     }
 }
+
+@media screen and (max-width: 428px) {
+    .New {
+        width: 100%;
+        padding: 2em 1em;
+    }
+
+    .NewAccount {
+        padding: 3em 1em 0em 1em;
+    }
+
+    .input_NewEmail, 
+    .input_NewCpf, 
+    .input_NewDate, 
+    .input_NewPass {
+        width: 90%;
+    }
+
+    .button_New {
+        width: 90%;
+    }
+}

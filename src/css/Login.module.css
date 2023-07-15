@@ -172,3 +172,21 @@
         width: 66%;
     }
 }
+
+@media screen and (max-width: 428px) {
+    .Login {
+        width: 100%;
+    }
+
+    .Account {
+        padding: 3em 1em 0em 1em;
+    }
+
+    .button_google, .button_facebook {
+        width: 90%;
+    }
+
+    .input_email, .input_pass {
+        width: 90%;
+    }
+}

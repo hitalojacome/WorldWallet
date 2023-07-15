@@ -220,21 +220,36 @@
     }
 
     .center {
-        padding: 5em 1em;
+        padding: 4em 1em;
     }
 
     .center__left__cards {
         display: none;
     }
 
+    .center__left__titulo {
+        font-size: 40px;
+    }
+
+    .center__left__texto {
+        padding: 2em 0 3em 0;
+    }
+
     .center__left {
         padding: 0;
         margin: auto;
         text-align: center;
+        bottom: 50%;
+    }
+
+    .button__OpenAccount {
+        top: 2em;
     }
 
     .partners {
+        padding: 2em 0;
         margin: auto;
         width: 50%;
+        gap: 8px;
     }
 }

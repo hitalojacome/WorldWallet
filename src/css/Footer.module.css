@@ -77,3 +77,35 @@ footer {
         background-position: center;
     }
 }
+
+@media screen and (max-width: 428px) {
+    footer {
+        background-color: var(--azul-escuro);
+        height: 90vh;
+        background-size: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding: 5em 0em 2em 0em;
+    }
+
+    .info {
+        padding: 0;
+        width: 100%;
+        display: block;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    .logo {
+        padding: 0em 0em 1em 0em;
+        margin: auto;
+    }
+
+    .logo__text {
+        display: none;
+    }
+
+    .info__item {
+        padding: .6em 0;
+    }
+}

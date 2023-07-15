@@ -30,7 +30,9 @@
     height: 45%;
 }
 
-.cards__item {
+.cards__item1,
+.cards__item2,
+.cards__item3 {
     padding: 15px;
     background: var(--azul-escuro);
     border-radius: 30px;
@@ -63,5 +65,35 @@
 @media screen and (min-width: 1728px) {
     .about__cards {
         margin-top: 5%;
+    }
+}
+
+@media screen and (max-width: 428px) {
+    .about {
+        padding: 3em 1em;
+    }
+
+    .about__text {
+        padding: 0%;
+        text-align: center;
+        width: 100%;
+    }
+
+    .about__text__title {
+        font-size: 35px;
+    }
+
+    .about__cards {
+        padding: 0;
+        flex-wrap: wrap;
+    }
+
+    .cards__item1,
+    .cards__item2 {
+        width: auto;
+    }
+
+    .cards__item3 {
+        display: none;
     }
 }
